@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "PNG Grabber",
+  "version": "0.1",
+  "description": "Creates a PGN from Chessbase and puts it into your Lichess study.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://database.chessbase.com/", "https://database.chessbase.com/*", "https://lichess.org/*"
+      ],
+      "js": ["script.js"]
+    }
+  ]
+}
